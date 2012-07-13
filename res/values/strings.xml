@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainTabActivity!</string>
+    <string name="app_name">MyBox</string>
+    <string name="main_home">首页</string>
+    <string name="main_album">相册</string>
+    <string name="main_manage_date">地图</string>
+    <string name="main_friends">天气</string>
+    <string name="more">更多</string>
+</resources>

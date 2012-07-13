@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bobox</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<style>
+	#check {
+		background:url(images/bg001.jpg) no-repeat center center;
+	}
+	#check-list li{
+		text-align:center;
+		line-height:30px;
+	}
+	#check-list a {
+		text-decoration:none;
+		font-family: Helvetica,Arial,sans-serif;
+		text-shadow: 0 1px 0 white;
+	}
+	#check-list a:link {
+		color:green;
+	}
+
+	#wrapper {
+		position:absolute; 
+		z-index:1;
+		top:45px; bottom:48px; left:0;
+		width:100%;
+		overflow:auto;
+	}
+	#scroller {
+		position:absolute;
+		z-index:1;
+	/*	-webkit-touch-callout:none;*/
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		width:100%;
+		padding:0;
+	}
+
+	#enter {
+		height:50px;
+		width:120px;
+		line-height:32px;
+	}
+	</style>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<script>
+		function setText(str){
+			alert(str);
+			document.getElementById("tar").innerText=str;
+		}
+	</script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a" id="check">
+	<div data-role="content">
+		<p><a href="album.html" data-role="button" data-icon="star" data-transition="slide" data-ajax="false">Album</a></p>
+		<p><a href="weather.html" data-role="button" data-icon="star" data-transition="slide" rel="external">Weather</a></p>
+		<p><a href="map.html" data-role="button" data-icon="star" data-transition="slide" data-ajax="false">Map</a></p>
+		<p><a href="diary.html" data-role="button" data-icon="star" data-transition="slide" data-ajax="false">Diary</a></p>
+		<p><a href="camera.html" data-role="button" data-icon="star" data-transition="slide" data-ajax="false">Camera</a></p>
+		<p><a href="#" data-role="button" data-icon="star" id="tar" onclick="window.demo1.jsClick()">jsClick</a></p>
+		<p><a href="#" data-role="button" data-icon="star" id="tar" onclick="window.demo2.javaAlert()">javaAlert</a></p>
+	</div>
+</div>
+</body>
+</html>
